@@ -18,7 +18,8 @@ func resourceFoo() *schema.Resource {
 			},
 			"parameters": &schema.Schema{
 				Type:     schema.TypeMap,
-				Required: true,
+				Optional: true,
+				Computed: true,
 			},
 		},
 	}
